@@ -1,0 +1,23 @@
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  min-height: 100vh;
+  padding: 1rem;
+  max-width: 450px;
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.mainContainer > div {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+@media (max-width: 520) {
+  .mainContainer {
+    padding: 0.5rem;
+    max-width: 100%;
+  }
+}

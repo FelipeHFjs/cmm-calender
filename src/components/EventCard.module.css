@@ -1,0 +1,39 @@
+.eventCard {
+  border: 1px solid var(--color-orange);
+  border-left: 4px solid var(--color-orange);
+  border-bottom: 5px solid var(--color-orange);
+  border-radius: 8px;
+  padding: 16px;
+  margin: 16px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 100%;
+  background: var(--color-green-dark);
+  color: white;
+  position: relative;
+  padding-left: 3rem;
+}
+
+@media (max-width: 768px) {
+  .eventCard {
+    margin: 8px 0;
+    padding: 12px;
+    padding-left: 2rem;
+    border-radius: 6px;
+  }
+}
+
+.eventCard::before {
+  content: "CMM";
+  position: absolute;
+  top: 8px;
+  left: -2px;
+  font-size: 10px;
+  font-weight: bold;
+  color: #d2b48c;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  letter-spacing: 2px;
+}
